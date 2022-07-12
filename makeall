@@ -1,1 +1,1 @@
-gcc main.c -o clox
+gcc *.c -o clox
