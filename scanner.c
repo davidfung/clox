@@ -5,6 +5,8 @@
 #include "common.h"
 #include "scanner.h"
 
+extern parser;
+
 typedef struct
 {
     const char *start;
