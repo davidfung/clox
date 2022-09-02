@@ -3,9 +3,10 @@
 #include <string.h>
 
 #include "common.h"
+#include "compiler.h"
 #include "scanner.h"
 
-extern parser;
+extern Parser parser;
 
 typedef struct
 {

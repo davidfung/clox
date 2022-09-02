@@ -8,14 +8,6 @@
 #include "debug.h"
 #endif
 
-typedef struct
-{
-    Token current;
-    Token previous;
-    bool hadError;
-    bool panicMode;
-} Parser;
-
 typedef enum
 {
     PREC_NONE,
