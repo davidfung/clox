@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "common.h"
 #include "compiler.h"
@@ -7,6 +8,8 @@
 #ifdef DEBUG_PRINT_CODE
 #include "debug.h"
 #endif
+
+extern void consume(TokenType type, const char *message);
 
 typedef enum
 {

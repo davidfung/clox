@@ -7,6 +7,7 @@
 #include "scanner.h"
 
 extern Parser parser;
+extern void errorAtCurrent(const char *message);
 
 typedef struct
 {
