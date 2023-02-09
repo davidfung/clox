@@ -1,0 +1,10 @@
+// Chapter 24
+// Calls and Functions
+
+fun areWeHavingItYet() {
+    print "Yes we are!";
+}
+  
+print areWeHavingItYet;
+
+
