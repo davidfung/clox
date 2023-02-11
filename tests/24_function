@@ -10,19 +10,31 @@
 // var notAFunction = 123;
 // notAFunction();
 
-// fun sum(a, b, c) {
-//     return a + b + c;
-// }
-// print 4 + sum(5, 6, 7);
+fun sum(a, b, c) {
+    return a + b + c;
+}
+print 4 + sum(5, 6, 7);
 
 // fun printarg(a) {
 //     print a;
 // }
 // printarg("hello");
 
-fun a() { b(); }
-fun b() { c(); }
-fun c() {
-    c("too", "many");
-}
-a();
+// fun a() { b(); }
+// fun b() { c(); }
+// fun c() {
+//     c("too", "many");
+// }
+// a();
+
+// fun a() { b(); }
+// fun b() { c("too", "many"); }
+// fun c() { print 1; }
+// a();
+
+// fun noReturn() {
+//     print "Do stuff";
+// }
+// print noReturn();
+
+// return "What?!";
