@@ -1,10 +1,28 @@
 // Chapter 24
 // Calls and Functions
 
-fun areWeHavingItYet() {
-    print "Yes we are!";
+// fun areWeHavingItYet() {
+//     print "Yes we are!";
+// }
+// print areWeHavingItYet;
+
+
+// var notAFunction = 123;
+// notAFunction();
+
+// fun sum(a, b, c) {
+//     return a + b + c;
+// }
+// print 4 + sum(5, 6, 7);
+
+// fun printarg(a) {
+//     print a;
+// }
+// printarg("hello");
+
+fun a() { b(); }
+fun b() { c(); }
+fun c() {
+    c("too", "many");
 }
-  
-print areWeHavingItYet;
-
-
+a();
