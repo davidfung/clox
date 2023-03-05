@@ -1,0 +1,30 @@
+var z = 35;
+print z;
+
+fun fib(n) {
+    if (n < 2) return n;
+    return fib(n - 2) + fib(n - 1);
+}
+
+var start = clock();
+print fib(z);
+print clock() - start;
+
+fun fib2(n) {
+    if (n < 2) return n;
+    var a = 0;
+    var b = 1;
+    var c;
+    while (n > 0) {
+        c = a + b;
+        a = b;
+        b = c;
+        n = n - 1;
+    }
+    return a;
+}
+
+start = clock();
+print fib2(z);
+print clock() - start;
+
