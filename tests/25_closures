@@ -29,13 +29,13 @@
 // output:
 // > doughnut
 // > bagel
+
 // fun makeClosure(value) {
 //   fun closure() {
 //     print value;
 //   }
 //   return closure;
 // }
-
 // var doughnut = makeClosure("doughnut");
 // var bagel = makeClosure("bagel");
 // doughnut();
@@ -47,24 +47,24 @@
 // create inner closure
 // value
 
-fun outer() {
-  var x = "value";
-  fun middle() {
-    fun inner() {
-      print x;
-    }
+// fun outer() {
+//   var x = "value";
+//   fun middle() {
+//     fun inner() {
+//       print x;
+//     }
 
-    print "create inner closure";
-    return inner;
-  }
+//     print "create inner closure";
+//     return inner;
+//   }
 
-  print "return from outer";
-  return middle;
-}
+//   print "return from outer";
+//   return middle;
+// }
 
-var mid = outer();
-var in = mid();
-in ();
+// var middle = outer();
+// var inner = middle();
+// inner();
 
 // --------------------------------------------------------
 // Expected output:
@@ -85,6 +85,19 @@ in ();
 //     }
 //   }
 // }
+
+// --------------------------------------------------------
+// Output:
+// prints "outside"
+
+fun outer() {
+  var x = "outside";
+  fun inner() {
+    print x;
+  }
+  inner();
+}
+outer();
 
 // --------------------------------------------------------
 // End
