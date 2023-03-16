@@ -90,14 +90,30 @@
 // Output:
 // prints "outside"
 
+// fun outer() {
+//   var x = "outside";
+//   fun inner() {
+//     print x;
+//   }
+//   inner();
+// }
+// outer();
+
+// --------------------------------------------------------
+// Output:
+// prints "outside"
+
 fun outer() {
   var x = "outside";
   fun inner() {
     print x;
   }
-  inner();
+
+  return inner;
 }
-outer();
+
+var closure = outer();
+closure();
 
 // --------------------------------------------------------
 // End
