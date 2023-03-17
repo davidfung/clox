@@ -1,13 +1,15 @@
-// Chapter 25
+// Chapter 25 - Closures
 
 // --------------------------------------------------------
 // var x = "global";
-// fun outer() {
-//     var x = "outer";
-//   fun inner() {
+// fun outer()
+// {
+//   var x = "outer";
+//   fun inner()
+//   {
 //     print x;
-//     }
-//     inner();
+//   }
+//   inner();
 // }
 // outer(); // should print "outer"
 
@@ -103,17 +105,17 @@
 // Output:
 // prints "outside"
 
-fun outer() {
-  var x = "outside";
-  fun inner() {
-    print x;
-  }
+// fun outer() {
+//   var x = "outside";
+//   fun inner() {
+//     print x;
+//   }
 
-  return inner;
-}
+//   return inner;
+// }
 
-var closure = outer();
-closure();
+// var closure = outer();
+// closure();
 
 // --------------------------------------------------------
 // End
