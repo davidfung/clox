@@ -105,17 +105,17 @@
 // Output:
 // prints "outside"
 
-// fun outer() {
-//   var x = "outside";
-//   fun inner() {
-//     print x;
-//   }
+fun outer() {
+  var x = "outside";
+  fun inner() {
+    print x;
+  }
 
-//   return inner;
-// }
+  return inner;
+}
 
-// var closure = outer();
-// closure();
+var closure = outer();
+closure();
 
 // --------------------------------------------------------
 // End
