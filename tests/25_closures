@@ -105,17 +105,48 @@
 // Output:
 // prints "outside"
 
-fun outer() {
-  var x = "outside";
-  fun inner() {
-    print x;
-  }
+// fun outer() {
+//   var x = "outside";
+//   fun inner() {
+//     print x;
+//   }
 
-  return inner;
+//   return inner;
+// }
+
+// var closure = outer();
+// closure();
+
+// --------------------------------------------------------
+// End of Chapter Challenge #3
+
+fun newVector(a, b) {
+   var x = a;
+   var y = b;
+
+   fun vector(selector, v) {
+      if (selector == 1) {
+        return x;
+      }
+      if (selector == 2) {
+        return y;
+      }
+      if (selector == 3) {
+        return newVector(x + v(1,0), y + v(2,0));
+      }
+   }
+
+   return vector;
 }
 
-var closure = outer();
-closure();
+var v = newVector(4, 5);
+print v(1, 0);
+print v(2, 0);
+var s = newVector(2, 3);
+var t = v(3, s);
+print t(1, 0);
+print t(2, 0);
+
 
 // --------------------------------------------------------
 // End
