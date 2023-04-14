@@ -9,7 +9,7 @@
 #define DEBUG_TRACE_EXECUTION_X
 
 #define DEBUG_STRESS_GC_X
-#define DEBUG_LOG_GC
+#define DEBUG_LOG_GC_X
 
 #define UINT8_COUNT (UINT8_MAX + 1)
 

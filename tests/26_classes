@@ -1,0 +1,16 @@
+// Chapter 26 - Classes and Instances
+
+// --------------------------------------------------------
+// test class
+class Brioche
+{
+} print Brioche; // print "Brioche"
+
+// --------------------------------------------------------
+// test instance
+class Brioche
+{
+} print Brioche(); // print "Brioche"
+
+// --------------------------------------------------------
+// end
