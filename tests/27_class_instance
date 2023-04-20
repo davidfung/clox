@@ -1,0 +1,42 @@
+// Chapter 27 - Classes and Instances
+
+// --------------------------------------------------------
+// test class
+class Brioche
+{
+} print Brioche; // print "Brioche"
+
+// --------------------------------------------------------
+// test instance
+class Brioche
+{
+} print Brioche(); // print "Brioche"
+
+// --------------------------------------------------------
+// test field get/set
+
+class Eclair
+{
+}
+
+var eclair = Eclair();
+eclair.filling = "pastry creme";
+print eclair.filling;
+
+// test undefined property
+//// print eclair.condiment;
+
+// test not an instance
+var obj = "not an instance";
+// print obj.field; // print "Only instances have properties"
+// obj.field = 1; // print "Only instances have fields."
+
+class Toast
+{
+}
+
+var toast = Toast();
+print toast.jam = "grape"; // Prints "grape".
+
+// --------------------------------------------------------
+// end
