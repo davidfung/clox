@@ -1,0 +1,18 @@
+// Chapter 27 - Methods and Initializers
+
+// --------------------------------------------------------
+// test method
+class Brunch
+{
+    bacon() { print "x"; }
+    eggs() {}
+}
+
+var brunch = Brunch();
+print Brunch;
+print brunch;
+// brunch.bacon();
+// brunch.eggs();
+
+// --------------------------------------------------------
+// end
