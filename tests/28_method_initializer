@@ -4,15 +4,29 @@
 // test method
 class Brunch
 {
-    bacon() { print "x"; }
-    eggs() {}
+    bacon() { print "bacon"; }
+    eggs() { print "eggs"; }
 }
 
 var brunch = Brunch();
 print Brunch;
 print brunch;
-// brunch.bacon();
-// brunch.eggs();
+
+brunch.bacon();
+
+var eggs = brunch.eggs;
+eggs();
+
+// --------------------------------------------------------
+
+class Scone {
+  topping(first, second) {
+    print "scone with " + first + " and " + second;
+  }
+}
+
+var scone = Scone();
+scone.topping("berries", "cream");
 
 // --------------------------------------------------------
 // end
