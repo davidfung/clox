@@ -2,31 +2,72 @@
 
 // --------------------------------------------------------
 // test method
-class Brunch
-{
-    bacon() { print "bacon"; }
-    eggs() { print "eggs"; }
-}
 
-var brunch = Brunch();
-print Brunch;
-print brunch;
+// class Brunch
+// {
+//     bacon() { print "bacon"; }
+//     eggs() { print "eggs"; }
+// }
 
-brunch.bacon();
+// var brunch = Brunch();
+// print Brunch;
+// print brunch;
 
-var eggs = brunch.eggs;
-eggs();
+// brunch.bacon();
+
+// var eggs = brunch.eggs;
+// eggs();
 
 // --------------------------------------------------------
 
-class Scone {
-  topping(first, second) {
-    print "scone with " + first + " and " + second;
-  }
-}
+// class Scone {
+//   topping(first, second) {
+//     print "scone with " + first + " and " + second;
+//   }
+// }
 
-var scone = Scone();
-scone.topping("berries", "cream");
+// var scone = Scone();
+// scone.topping("berries", "cream");
+
+// --------------------------------------------------------
+
+// class Nested
+// {
+//   method()
+//   {
+//     print this;
+//   }
+// }
+
+// Nested()
+//     .method();
+
+// --------------------------------------------------------
+
+// class Nested
+// {
+//   method()
+//   {
+//     fun function()
+//     {
+//       print this;
+//     }
+
+//     function();
+//   }
+// }
+
+// Nested()
+//     .method();
+
+// --------------------------------------------------------
+
+print this; // At top level.
+
+// fun notMethod()
+// {
+//   print this; // In a function.
+// }
 
 // --------------------------------------------------------
 // end
