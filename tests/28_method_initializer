@@ -62,12 +62,13 @@
 
 // --------------------------------------------------------
 
-print this; // At top level.
+// print this; // At top level.
 
-// fun notMethod()
-// {
-//   print this; // In a function.
-// }
+fun notMethod()
+{
+  print this; // In a function.
+}
+notMethod();
 
 // --------------------------------------------------------
 // end
