@@ -21,6 +21,11 @@
 // --------------------------------------------------------
 
 class Scone {
+    init() { 
+        print "hello world!";
+        return this;
+    }
+
     topping(first, second)
     {
         print "scone with " + first + " and " + second + " with " + this.compliment;
