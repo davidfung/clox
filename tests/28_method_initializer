@@ -23,7 +23,7 @@
 class Scone {
     init() { 
         print "hello world!";
-        return this;
+        ////return this;
     }
 
     topping(first, second)
