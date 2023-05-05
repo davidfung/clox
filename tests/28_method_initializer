@@ -20,14 +20,17 @@
 
 // --------------------------------------------------------
 
-// class Scone {
-//   topping(first, second) {
-//     print "scone with " + first + " and " + second;
-//   }
-// }
+class Scone {
+    topping(first, second)
+    {
+        print "scone with " + first + " and " + second + " with " + this.compliment;
+    }
+}
 
-// var scone = Scone();
-// scone.topping("berries", "cream");
+var scone = Scone();
+scone.compliment = "chocolate";
+print scone.compliment;
+scone.topping("berries", "cream");
 
 // --------------------------------------------------------
 
@@ -62,7 +65,7 @@
 
 // --------------------------------------------------------
 
-print this; // At top level.
+// print this; // At top level.
 
 // fun notMethod()
 // {
