@@ -615,6 +615,7 @@ static InterpretResult run()
             tableAddAll(&AS_CLASS(superclass)->methods,
                         &subclass->methods);
             pop(); // Subclass.
+            // pop(); // Superclass
             break;
         }
         case OP_METHOD:
