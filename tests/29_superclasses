@@ -1,7 +1,7 @@
 // Chapter 29 - Superclasses
 
 // --------------------------------------------------------
-// 29.1 Interiting Methods
+// 29.1 Inheriting Methods
 
 // class Doughnut {
 //   cook() {
@@ -27,27 +27,116 @@
 // class OhNo<NotClass { }
 
 // --------------------------------------------------------
+class Doughnut {
+  cook() {
+    print "Dunk in the fryer.";
+   }
+   super0() {
+    print("Super0");
+   }
+ }
+
+ class Cruller<Doughnut {
+   cook() {
+    print "not this cook";
+   }
+   finish() {
+     print "Glaze with icing.";
+   }
+   super1() {
+    super.super0();
+   }
+ }
+
+ class Boston < Cruller {
+    extra() {
+      print "Extra Chocolate";
+    }
+    super2() {
+      super.super1();
+      //xxx super.super.super0();
+    }
+ }
+
+//  var doughnut = Doughnut();
+//  doughnut.cook();
+
+//  var cruller = Cruller();
+//  cruller.cook();
+//  cruller.finish();
+
+ var boston = Boston();
+//  boston.cook();
+//  boston.finish();
+//  boston.extra();
+boston.super2();
+
+// --------------------------------------------------------
 // 29.2 Storing Superclasses
 
-class A {
-  method() {
-    print "A method";
-  }
-}
+// class A {
+//   method() {
+//     print "A method";
+//   }
+// }
 
-class B<A {
-  method() {
-    print "B method";
-  }
+// class B<A {
+//   method() {
+//     print "B method";
+//   }
 
-  test() {
-    super.method();
-  }
-}
+//   test() {
+//     super.method();
+//   }
+// }
 
-class C<B { }
+// class C<B { }
 
-C().test();
+// C().test(); // print "A method"
+
+// --------------------------------------------------------
+// Lox supports getting a reference to a superclass method 
+// as a closure without invoking it:
+
+// class A {
+//   method() {
+//     print "A";
+//   }
+// }
+
+// class B < A {
+//   method() {
+//     var closure = super.method;
+//     closure(); // Prints "A".
+//   }
+// }
+
+// var b = B();
+// b.method();
+
+// --------------------------------------------------------
+// OP_GET_SUPER 
+
+// class Doughnut {
+//   cook() {
+//     print "Dunk in the fryer.";
+//     this.finish("sprinkles");
+//   }
+
+//   finish(ingredient) {
+//     print "Finish with " + ingredient;
+//   }
+// }
+
+// class Cruller < Doughnut {
+//   finish(ingredient) {
+//     // No sprinkles, always icing.
+//     super.finish("icing" + " and " + ingredient);
+//   }
+// }
+
+// var cruller = Cruller();
+// cruller.finish("NOT USE");
 
 // --------------------------------------------------------
 //End
