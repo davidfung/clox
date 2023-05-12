@@ -17,15 +17,19 @@ class Zoo {
 
 var zoo = Zoo();
 var sum = 0;
+var batches = 0;
 var start = clock();
-while (sum < 100000000) {
-    sum = sum + zoo.ant()
-        + zoo.banana()
-        + zoo.tuna()
-        + zoo.hay()
-        + zoo.grass()
-        + zoo.mouse();
+while (clock() - start < 10) {
+    while (sum < 10000) {
+        sum = sum + zoo.ant()
+            + zoo.banana()
+            + zoo.tuna()
+            + zoo.hay()
+            + zoo.grass()
+            + zoo.mouse();
+    }
+    batches = batches + 1;
+    sum = 0;
 }
 
-print clock() - start;
-print sum;
+print batches;
