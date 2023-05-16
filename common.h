@@ -5,6 +5,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#define NAN_BOXING
 #define DEBUG_PRINT_CODE_x
 #define DEBUG_TRACE_EXECUTION_x
 
